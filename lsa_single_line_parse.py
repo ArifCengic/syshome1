@@ -10,7 +10,7 @@ sizes = []
 with open('lsa_single_line_def.csv', 'r') as format_f:
     for d in csv.DictReader(format_f):
         sizes.append(int(d['Column Width']))
-        columns.append(d['Name'])
+        columns.append(d['Name'].lower())
         chunk += int(d['Column Width'])
 
 
