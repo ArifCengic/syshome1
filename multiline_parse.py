@@ -19,9 +19,9 @@ with open('lsa_multi_line.txt', 'r') as f:
             d = {}
             d['pccn'] = line[0:6].strip()
             d['plisn'] = line[6:11].strip()
-            d['item_name'] = line[11:23].strip()
+            d['item_name'] = line[12:23].strip()
             d['unit_price'] = line[23:31].strip()
-            d['failure_rate'] = line[31:39].strip()
+            d['failure_rate'] = line[31:40].strip()
         else:
             # B line
             d['next_higher_plisn'] = line[12:17].strip()
